@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 
 function renderCoffee(coffee) {
     var html = '<div class="coffee">';
@@ -30,9 +30,14 @@ function updateCoffees(e) {
     tbody.innerHTML = renderCoffees(filteredCoffees);
 }
 
+function allOptions(e) {
+    var allOptions = document.getElementById("all-options").value;
+    if (roastSelection.value === allOptions) {
+        tbody.innerHTML = renderCoffees(coffees);
+    }
+}
 
 function updateCoffeesAgain(input) {
-    // input.preventDefault();
 var selectedCoffee = coffeeName.value.toLowerCase();
     var filteredCoffees = [];
     coffees.forEach(function (coffee) {
@@ -42,9 +47,6 @@ var selectedCoffee = coffeeName.value.toLowerCase();
     });
     tbody.innerHTML = renderCoffees(filteredCoffees);
 }
-
-
-
 
 // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
 var coffees = [
@@ -66,8 +68,6 @@ var coffees = [
 
 coffees.reverse();
 
-
-
 var tbody = document.querySelector('#coffees');
 var submitButton = document.querySelector('#submit');
 var coffeeButton = document.querySelector("#submit2");
@@ -80,4 +80,5 @@ submitButton.addEventListener('click', updateCoffees);
 coffeeButton.addEventListener("click", updateCoffeesAgain);
 roastSelection.addEventListener("change", updateCoffees);
 coffeeName.addEventListener("keyup", updateCoffeesAgain);
+roastSelection.addEventListener("change", allOptions);
 
