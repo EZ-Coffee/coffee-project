@@ -48,9 +48,6 @@ var selectedCoffee = coffeeName.value.toLowerCase();
     tbody.innerHTML = renderCoffees(filteredCoffees);
 }
 
-
-
-
 // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
 var coffees = [
     {id: 1, name: 'Light City', roast: 'light'},
@@ -84,7 +81,6 @@ function addFlavor() {
     coffees.push(addCoffee);
     tbody.innerHTML = renderCoffees(coffees);
 }
-
 
 var tbody = document.querySelector('#coffees');
 var submitButton = document.querySelector('#submit');
