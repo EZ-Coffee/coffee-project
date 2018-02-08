@@ -1,53 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title></title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-</head>
-<body>
-    <h1>Coffee!</h1>
-
-    <form>
-        <label for="roast-selection">Roasts:</label>
-        <select id="roast-selection">
-            <option id="all-options">all options</option>
-            <option>light</option>
-            <option>medium</option>
-            <option>dark</option>
-        </select>
-        <input id="submit" type="submit" />
-        <label for="coffee-name">Coffee Name</label>
-        <input id="coffee-name" type="text">
-        <input id="submit2" type="submit">
-    </form>
-
-    <form>
-        <label for="new-roast">New Roast</label>
-        <select name="" id="new-roast">
-            <option value="light">light</option>
-            <option value="medium">medium</option>
-            <option value="dark">dark</option>
-        </select>
-        <label for="new-coffee">New Coffee</label>
-        <input type="text" id="new-coffee">
-        <input type="submit" id="submit-new">
-    </form>
-
-
-    <div id="coffees">
-        <h1>Name</h1>
-        <p>Roast</p>
-    </div>
-
-    <script src="main.js"></script>
-    <script src="http://code.jquery.com/jquery-3.2.1.min.js"
-                integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-                crossorigin="anonymous">
-    </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
-    </script>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body class="container">
+        <div class="row">
+            <div class="page-header">
+                <h1 align="center">Coffee!</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class=".col-xs-6">
+                <div class="row right">
+                    <div class=".col-xs-6">
+                        <form>
+                            <label for="roast-selection">Roasts:</label>
+                            <br>
+                            <select id="roast-selection">
+                                <option id="all-options">all options</option>
+                                <option>light</option>
+                                <option>medium</option>
+                                <option>dark</option>
+                            </select>
+                            <!--<br>-->
+                            <!--<input id="submit" type="submit" class="btn btn-primary"/>-->
+                            <br>
+                            <label for="coffee-name">Coffee Name:</label>
+                            <br>
+                            <input id="coffee-name" type="text">
+                            <br>
+                            <input id="submit2" type="submit" class="btn btn-primary">
+                        </form>
+                    </div>
+                    <div class=".col-xs-6">
+                        <h1>Add A Coffee</h1>
+                        <form>
+                            <label for="new-roast">New Roast:</label>
+                            <br>
+                            <select name="" id="new-roast">
+                                <option value="light">light</option>
+                                <option value="medium">medium</option>
+                                <option value="dark">dark</option>
+                            </select>
+                            <br>
+                            <label for="new-coffee">New Coffee:</label>
+                            <br>
+                            <input type="text" id="new-coffee">
+                            <br>
+                            <input type="submit" id="submit-new" class="btn btn-primary">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class=".col-xs-6" id="coffees">
+                <h1>Name</h1>
+                <p>Roast</p>
+            </div>
+        </div>
+        <script src="main.js"></script>
+        <script src="http://code.jquery.com/jquery-3.2.1.min.js"
+                    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+                    crossorigin="anonymous">
+        </script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+        </script>
+    </body>
 </html>
