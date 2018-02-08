@@ -8,12 +8,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-    <div class="container">
+    <header>
         <div class="row">
-            <div class="page-header">
-                <h1 align="center">Coffee!</h1>
+            <div class="page-header jumbotron coffeeHero">
+                <h1 align="center" id="coffeeTitle">EZ Coffee!</h1>
             </div>
         </div>
+    </header>
+    <main>
+    <div class="container lift">
         <div class="row">
             <div class="col-xs-6 col-lg-6">
                 <div class="row">
@@ -62,8 +65,8 @@
                 </div>
             </div>
             <div class="col-xs-6 col-lg-6">
-                <div class="container coffeeText">
-                    <div id="coffees" style="height:400px;width:400px #fff;overflow:auto;">
+                <div class="container-fluid coffeeText">
+                    <div id="coffees">
                         <h1>Name</h1>
                         <p>Roast</p>
                     </div>
@@ -71,6 +74,7 @@
             </div>
         </div>
     </div>
+    </main>
         <script src="main.js"></script>
         <script src="http://code.jquery.com/jquery-3.2.1.min.js"
                     integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
