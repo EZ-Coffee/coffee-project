@@ -14,6 +14,10 @@ body{
     background-image: url("img/furley_bg.png");
 }
 
+main,
+header{
+    font-family: 'Raleway', sans-serif;
+}
 
 .right {
     clear: both;
